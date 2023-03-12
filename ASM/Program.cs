@@ -22,7 +22,7 @@ app.UseRouting();
 app.UseAuthorization();
 // Set mặc định khi run ứng dụng
 app.MapControllerRoute("default", "{controller}/{action}/{id?}",
-    new { controller = "Home", action = "Privacy" },
+    new { controller = "User", action = "Index" },
     new { id = new IntRouteConstraint()}
    ) ;
 
